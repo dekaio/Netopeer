@@ -25,3 +25,9 @@ run docker
 docker run -it --rm -p 8300:830 --name netopeer netopeer
 
 docker build -t netopeer docker ps -a
+
+## tips and tricks
+make modifications in supervisord.conf
+docker build -t netopeer .
+
+docker run -it --rm -p 8300:830 --name netopeer netopeer
