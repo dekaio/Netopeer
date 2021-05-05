@@ -29,7 +29,7 @@ docker build -t netopeer docker ps -a
 
 ## Connect to server
 connect 127.0.0.1 --login root
-
+sudo ssh root@127.0.0.1 -p 830
 
 ## tips and tricks
 make modifications in supervisord.conf
