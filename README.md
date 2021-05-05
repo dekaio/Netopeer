@@ -11,6 +11,7 @@ https://github.com/sysrepo/sysrepo/blob/master/deploy/docker/sysrepo-netopeer2/l
 Run docker server
 sudo docker run -it --rm -p 8300:830 --name netopeer netopeer
 ## ssh configuration
+sudo service SSH restart
 Patch your SSHd configuration. The netconf server (single-level, for instance) will be called automagically by sshd when a netconf client connects. In Ubuntu the file is /etc/ssh/sshd_config
 
 Port 830
