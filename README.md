@@ -44,3 +44,13 @@ https://hub.docker.com/r/sysrepo/sysrepo-netopeer2/
 ## check ip
 docker container ls -a    
 docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' containerid    
+
+
+## Netconf launch   
+1. docker run -it --name sysrepo -p 830:830 --rm sysrepo/sysrepo-netopeer2:latest
+2. netopeer-cli
+3. connect localhost --port 830 --login netconf
+4. password is netconf
+5. get-config candidate = Returns configuration data of the candidate   
+6. get-config --source startup  --filter-xpath /ietf-interfaces:interfaces  =Filtering something   
+7. 
