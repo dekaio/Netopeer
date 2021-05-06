@@ -39,6 +39,8 @@ docker run -it --rm -p 8300:830 --name netopeer netopeer
 docker ps -a    
 docker stop containerid
 docker rm containerid
+
+https://hub.docker.com/r/sysrepo/sysrepo-netopeer2/
 ## check ip
 docker container ls -a    
 docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' containerid    
