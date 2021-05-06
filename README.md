@@ -36,6 +36,9 @@ make modifications in supervisord.conf
 docker build -t netopeer .
 
 docker run -it --rm -p 8300:830 --name netopeer netopeer
+docker ps -a    
+docker stop containerid
+docker rm containerid
 ## check ip
-docker container ls -a
-docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' containerid
+docker container ls -a    
+docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' containerid    
