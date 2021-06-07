@@ -54,3 +54,5 @@ docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' cont
 5. get-config candidate = Returns configuration data of the candidate   
 6. get-config --source startup  --filter-xpath /ietf-interfaces:interfaces  =Filtering something   
 7. 
+## Netopeer gui installation
+https://github.com/CESNET/Netopeer-GUI/tree/master/install
